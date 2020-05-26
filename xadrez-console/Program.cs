@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Projeto Xadrez
+ * Professor Nélio Alves - Udemy
+ * Aluno Douglas Rosemann
+ * Data Inicio: 25/05/2020
+ * Data Fim: xx/05/2020
+ */
+using System;
 using tabuleiro;
 
 namespace xadrez_console {
@@ -6,6 +13,8 @@ namespace xadrez_console {
         static void Main(string[] args) {
 
             Tabuleiro tab = new Tabuleiro(8, 8);
+
+            Tela.imprimirTabuleiro(tab);
 
             Console.ReadLine();
         }
