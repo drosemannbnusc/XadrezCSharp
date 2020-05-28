@@ -8,7 +8,6 @@
 using System;
 using tabuleiro;
 using xadrez;
-using xadrez_console.tabuleiro;
 
 namespace xadrez_console {
     class Program {
@@ -28,10 +27,7 @@ namespace xadrez_console {
 
                     try {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
