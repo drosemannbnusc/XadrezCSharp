@@ -35,7 +35,7 @@ namespace tabuleiro {
             return false;
         }
 
-        public bool podeMoverPeca(Posicao pos) {
+        public bool movimentoPossivel(Posicao pos) {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
 
